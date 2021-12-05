@@ -48,7 +48,7 @@ a {
 
 /* Навигация по сайту, Контактные данные */
 
-.site-nav .list {
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -56,29 +56,26 @@ a {
   letter-spacing: 0.02em;
 }
 
-.address-nav .list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.link-current {
+.current {
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
-.site-nav .link {
-  color: var(--title-text-color);
-}
-
-.address-nav .link {
+.address-nav-link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.address-nav .link:hover,
-.address-nav .link:focus,
+.site-nav-link:hover,
+.site-nav-link:focus,
+.address-nav-link:hover,
+.address-nav-link:focus,
 .footer-address:hover,
 .footer-address:focus,
 .footer-mail:hover,
@@ -100,7 +97,8 @@ a {
   text-transform: uppercase;
 }
 .hero-button {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
+  background: #2196f3;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -112,7 +110,7 @@ a {
 }
 
 /* Наши преимущества */
-.advantages .advantages-title {
+.advantages-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -188,7 +186,6 @@ a {
 
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -196,7 +193,6 @@ a {
 
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -245,9 +241,13 @@ a {
 
 /* Buttons - состояния */
 .hero-button:hover,
-.hero-button:focus,
+.hero-button:focus {
+  color: var(--primary-white-color);
+  background: #0385f0;
+}
+
 .filter-button-off:hover,
 .filter-button-off:focus {
   color: var(--primary-white-color);
-  background: #2196f3;
+  background: var(--accent-color);
 }
